@@ -1,0 +1,20 @@
+[
+  {
+    "name": "simple-service",
+    "image": "python:2.7",
+    "cpu": 0,
+    "memory": 128,
+    "essential": true,
+    "command": [
+      "python",
+      "-m",
+      "SimpleHTTPServer"
+    ],
+    "portMappings": [
+      {
+        "containerPort": 8000,
+        "hostPort": 8000
+      }
+    ]
+  }
+]
